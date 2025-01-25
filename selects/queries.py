@@ -268,6 +268,7 @@ JOIN
         WHERE subject_id = 4);        
     """
 
+
     query = [get_max_avg_grades,
              get_student_highest_grade_subject,
              get_avg_grade_group_subject,
