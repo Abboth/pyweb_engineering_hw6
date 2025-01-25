@@ -4,19 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c854180-21b3-497c-9530-1bb23381ce40" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/py_engineering_hw6.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/create_connection.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/get_fake_data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/push_data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/push_tables.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/selects/queries.py" afterDir="false" />
+    <list default="true" id="6c854180-21b3-497c-9530-1bb23381ce40" name="Changes" comment="Finised script,&#10;fulfilling by selects">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selects/queries.py" beforeDir="false" afterPath="$PROJECT_DIR$/selects/queries.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selects/query_1.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/selects/query_2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/selects/query_3.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/selects/query_4.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/selects/query_5.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/selects/query_6.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/selects/query_7.sql" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +30,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Abboth"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Abboth/pyweb_engineering_hw6.git",
+    "accountId": "00d1d1b7-22b6-4b75-b921-9c29a39b3079"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -116,7 +125,20 @@
       <option name="presentableId" value="Default" />
       <updated>1737717257812</updated>
     </task>
+    <task id="LOCAL-00001" summary="Finised script,&#10;fulfilling by selects">
+      <option name="closed" value="true" />
+      <created>1737827183471</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1737827183471</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Finised script,&#10;fulfilling by selects" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finised script,&#10;fulfilling by selects" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
