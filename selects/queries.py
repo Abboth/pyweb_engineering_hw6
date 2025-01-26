@@ -16,6 +16,7 @@ def queries_sql(query):
                 with open(f"query_{query_count}.sql", "w", encoding="utf-8") as file:
                     file.write(task)
                 query_count += 1
+            con.close()
 
     except Error as e:
         logging.error(f"Error executing query: {e}")
@@ -244,7 +245,7 @@ JOIN
         t.name;  
     """
 
-    #Оцінки студентів у певній групі з певного предмета на останньому занятті.
+    # Оцінки студентів у певній групі з певного предмета на останньому занятті.
     get_grades_by_group_subject_last_lesson = """
     SELECT
         s.name AS student_name,
@@ -268,18 +269,17 @@ JOIN
         WHERE subject_id = 4);        
     """
 
+    queries = [get_max_avg_grades,
+               get_student_highest_grade_subject,
+               get_avg_grade_group_subject,
+               get_total_avg_grade,
+               get_courses_by_teacher,
+               get_students_by_group,
+               get_grades_by_group_subject,
+               get_avg_grade_by_teacher,
+               get_courses_by_student,
+               get_courses_by_student_teacher,
+               get_avg_grade_by_teacher_to_student,
+               get_grades_by_group_subject_last_lesson]
 
-    query = [get_max_avg_grades,
-             get_student_highest_grade_subject,
-             get_avg_grade_group_subject,
-             get_total_avg_grade,
-             get_courses_by_teacher,
-             get_students_by_group,
-             get_grades_by_group_subject,
-             get_avg_grade_by_teacher,
-             get_courses_by_student,
-             get_courses_by_student_teacher,
-             get_avg_grade_by_teacher_to_student,
-             get_grades_by_group_subject_last_lesson]
-
-    queries_sql(query)
+    queries_sql(queries)

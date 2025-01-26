@@ -28,7 +28,7 @@ def prepared_data(students, teachers):
     subjects_teachers = []
     groups = [(i,) for i in range(1, 4)]
 
-    for _ in range(4):
+    for _ in range(15):
         for i in range(1, randint(1, len(students))):
             random_date = date.today() - timedelta(days=randint(1, 365))
             students_grades.append((i, randint(1, len(subjects)),
