@@ -1,28 +1,38 @@
+import logging
+import os
 from create_connection import get_connection
 from sqlite3 import Error
-import logging
 
 logging.basicConfig(level=logging.INFO)
 
 
-def create_table(con, table_query):
+def create_table(con, table_query, table_name):
     cur = con.cursor()
     try:
-        cur.execute(table_query)
-        con.commit()
+        if os.path.exists("./database/college_data.sqlite"):
+            cur.execute(table_query)
+            con.commit()
+            cur.execute("SELECT name FROM sqlite_master WHERE type='table' AND name=?;", (table_name,))
+            result = cur.fetchone()
+            if result:
+                logging.info(f"{table_name} created successfully")
+            else:
+                raise Error
     except Error as e:
-        logging.info(f"Error creating table: {e}")
+        logging.error(f"Error creating table {table_name}: {e}")
+    except FileNotFoundError as e:
+        logging.error(f"Database not exist yet: {e}")
 
 
 def main():
     try:
         with get_connection() as conn:
-            tasks = [create_table(conn, teachers_table),
-                     create_table(conn, students_table),
-                     create_table(conn, subjects_table),
-                     create_table(conn, teacher_subjects_table),
-                     create_table(conn, students_grades),
-                     create_table(conn, group_table),]
+            create_table(conn, teachers_table, "teachers")
+            create_table(conn, students_table, "students")
+            create_table(conn, subjects_table, "subjects")
+            create_table(conn, teacher_subjects_table, "teacher_subjects")
+            create_table(conn, students_grades, "students_grades")
+            create_table(conn, group_table, "groups")
 
             logging.info("Tables created successfully.")
     except Error as e:

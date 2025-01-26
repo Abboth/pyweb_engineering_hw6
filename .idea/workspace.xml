@@ -4,16 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c854180-21b3-497c-9530-1bb23381ce40" name="Changes" comment="Finised script,&#10;fulfilling by selects">
+    <list default="true" id="6c854180-21b3-497c-9530-1bb23381ce40" name="Changes" comment="Finished script,&#10;Selects fulfilled">
+      <change afterPath="$PROJECT_DIR$/project/data/generate_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/db/connection.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/db/inserter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/db/schema.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/selects/queries.py" beforeDir="false" afterPath="$PROJECT_DIR$/selects/queries.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/selects/query_1.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/selects/query_2.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/selects/query_3.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/selects/query_4.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/selects/query_5.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/selects/query_6.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/selects/query_7.sql" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,18 +27,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Abboth"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Abboth&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Abboth/pyweb_engineering_hw6.git",
-    "accountId": "00d1d1b7-22b6-4b75-b921-9c29a39b3079"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Abboth/pyweb_engineering_hw6.git&quot;,
+    &quot;accountId&quot;: &quot;00d1d1b7-22b6-4b75-b921-9c29a39b3079&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -51,29 +48,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.create_connection.executor": "Run",
-    "Python.create_db.executor": "Run",
-    "Python.create_table.executor": "Run",
-    "Python.fill_data.executor": "Run",
-    "Python.get_fake_data.executor": "Run",
-    "Python.push_data.executor": "Run",
-    "Python.push_tables.executor": "Run",
-    "Python.queries.executor": "Run",
-    "Python.seed.executor": "Run",
-    "Python.select.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/alexm/PycharmProjects/py_engineering_hw6/selects",
-    "settings.editor.selected.configurable": "project.propVCSSupport.ChangelistConflict"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.create_connection.executor&quot;: &quot;Run&quot;,
+    &quot;Python.create_db.executor&quot;: &quot;Run&quot;,
+    &quot;Python.create_table.executor&quot;: &quot;Run&quot;,
+    &quot;Python.fill_data.executor&quot;: &quot;Run&quot;,
+    &quot;Python.get_fake_data.executor&quot;: &quot;Run&quot;,
+    &quot;Python.push_data.executor&quot;: &quot;Run&quot;,
+    &quot;Python.push_tables.executor&quot;: &quot;Run&quot;,
+    &quot;Python.queries.executor&quot;: &quot;Run&quot;,
+    &quot;Python.seed.executor&quot;: &quot;Run&quot;,
+    &quot;Python.select.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/alexm/PycharmProjects/py_engineering_hw6/selects&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.ChangelistConflict&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\alexm\PycharmProjects\py_engineering_hw6\selects" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\alexm\PycharmProjects\py_engineering_hw6\project\data" />
+      <recent name="C:\Users\alexm\PycharmProjects\py_engineering_hw6\project\tests" />
       <recent name="C:\Users\alexm\PycharmProjects\py_engineering_hw6" />
     </key>
   </component>
@@ -133,12 +132,40 @@
       <option name="project" value="LOCAL" />
       <updated>1737827183471</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Finised script,&#10;fulfilling by selects">
+      <option name="closed" value="true" />
+      <created>1737834931853</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1737834931853</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Finished script,&#10;Selects fulfilled">
+      <option name="closed" value="true" />
+      <created>1737835007235</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1737835007235</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Finised script,&#10;fulfilling by selects" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finised script,&#10;fulfilling by selects" />
+    <MESSAGE value="Finished script,&#10;Selects fulfilled" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished script,&#10;Selects fulfilled" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

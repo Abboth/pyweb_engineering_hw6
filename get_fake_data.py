@@ -1,5 +1,5 @@
-from datetime import date, timedelta
 import faker
+from datetime import date, timedelta
 from random import randint, choice
 
 
@@ -35,7 +35,7 @@ def prepared_data(students, teachers):
                                     randint(1, len(teachers)), choice(grades),
                                     random_date.strftime("%Y.%m.%d")))
 
-    for subject in subjects:
+    for _ in subjects:
         subjects_teachers.append((randint(1, len(subjects)), randint(1, len(teachers)),))
 
     return students_grades, subjects_teachers, students_list, teachers_list, subjects, groups
