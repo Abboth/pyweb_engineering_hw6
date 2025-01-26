@@ -35,6 +35,7 @@ def main():
             create_table(conn, group_table, "groups")
 
             logging.info("Tables created successfully.")
+            conn.close()
     except Error as e:
         logging.error(f"Error creating tables: {e}")
 
