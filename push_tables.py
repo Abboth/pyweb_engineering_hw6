@@ -20,24 +20,22 @@ def create_table(con, table_query, table_name):
                 raise Error
     except Error as e:
         logging.error(f"Error creating table {table_name}: {e}")
+        con.rollback()
     except FileNotFoundError as e:
         logging.error(f"Database not exist yet: {e}")
 
 
 def main():
-    try:
-        with get_connection() as conn:
-            create_table(conn, teachers_table, "teachers")
-            create_table(conn, students_table, "students")
-            create_table(conn, subjects_table, "subjects")
-            create_table(conn, teacher_subjects_table, "teacher_subjects")
-            create_table(conn, students_grades, "students_grades")
-            create_table(conn, group_table, "groups")
+    with get_connection() as conn:
+        create_table(conn, teachers_table, "teachers")
+        create_table(conn, students_table, "students")
+        create_table(conn, subjects_table, "subjects")
+        create_table(conn, teacher_subjects_table, "teacher_subjects")
+        create_table(conn, students_grades, "students_grades")
+        create_table(conn, group_table, "groups")
 
-            logging.info("Tables created successfully.")
-            conn.close()
-    except Error as e:
-        logging.error(f"Error creating tables: {e}")
+        logging.info("Tables created successfully.")
+        conn.close()
 
 
 teachers_table = """

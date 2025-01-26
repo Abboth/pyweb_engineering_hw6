@@ -46,6 +46,7 @@ def push_data_in_database(students, teachers, teacher_subjects, student_grades, 
             con.close()
         except Error as e:
             logging.error(f"Error pushing data into the database: {e}")
+            con.rollback()
 
 
 if __name__ == '__main__':
