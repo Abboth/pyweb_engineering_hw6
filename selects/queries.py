@@ -261,12 +261,12 @@ JOIN
     JOIN
         subjects sub ON sg.subject_id = sub.id
     WHERE
-        sub.id = 4
-        AND g.group_number = 2
+        sub.id = 1
+        AND g.group_number = 1
         AND sg.date = (
         SELECT MAX(date) 
         FROM students_grades
-        WHERE subject_id = 4);        
+        WHERE subject_id = 1);        
     """
 
     queries = [get_max_avg_grades,

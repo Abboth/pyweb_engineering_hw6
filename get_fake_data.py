@@ -26,7 +26,7 @@ def prepared_data(students, teachers):
     grades = [1, 2, 3, 4, 5]
     students_grades = []
     subjects_teachers = []
-    groups = [(i,) for i in range(1, 4)]
+    groups = [(i,) for i in range(1, 5)]
 
     for _ in range(15):
         for i in range(1, randint(1, len(students))):
