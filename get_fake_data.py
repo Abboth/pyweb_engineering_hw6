@@ -33,7 +33,7 @@ def prepared_data(students, teachers):
             random_date = date.today() - timedelta(days=randint(1, 365))
             students_grades.append((i, randint(1, len(subjects)),
                                     randint(1, len(teachers)), choice(grades),
-                                    random_date.strftime("%Y.%m.%d")))
+                                    random_date.strftime("%Y-%m-%d")))
 
     for _ in subjects:
         subjects_teachers.append((randint(1, len(subjects)), randint(1, len(teachers)),))

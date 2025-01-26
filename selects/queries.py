@@ -244,7 +244,7 @@ JOIN
         t.name;  
     """
 
-    # Оцінки студентів у певній групі з певного предмета на останньому занятті.
+    #Оцінки студентів у певній групі з певного предмета на останньому занятті.
     get_grades_by_group_subject_last_lesson = """
     SELECT
         s.name AS student_name,
@@ -260,25 +260,26 @@ JOIN
     JOIN
         subjects sub ON sg.subject_id = sub.id
     WHERE
-        sub.id = 1
-        AND g.group_number = 1
+        sub.id = 4
+        AND g.group_number = 2
         AND sg.date = (
-        SELECT MAX(date) 
-        FROM students_grades
-        WHERE subject_id = 1);        
+    SELECT MAX(date) 
+    FROM students_grades
+    WHERE subject_id = 4);
     """
 
-    queries = [get_max_avg_grades,
-               get_student_highest_grade_subject,
-               get_avg_grade_group_subject,
-               get_total_avg_grade,
-               get_courses_by_teacher,
-               get_students_by_group,
-               get_grades_by_group_subject,
-               get_avg_grade_by_teacher,
-               get_courses_by_student,
-               get_courses_by_student_teacher,
-               get_avg_grade_by_teacher_to_student,
-               get_grades_by_group_subject_last_lesson]
 
-    queries_sql(queries)
+    query = [get_max_avg_grades,
+             get_student_highest_grade_subject,
+             get_avg_grade_group_subject,
+             get_total_avg_grade,
+             get_courses_by_teacher,
+             get_students_by_group,
+             get_grades_by_group_subject,
+             get_avg_grade_by_teacher,
+             get_courses_by_student,
+             get_courses_by_student_teacher,
+             get_avg_grade_by_teacher_to_student,
+             get_grades_by_group_subject_last_lesson]
+
+    queries_sql(query)
