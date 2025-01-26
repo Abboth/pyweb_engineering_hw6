@@ -42,6 +42,7 @@ def prepared_data(students, teachers):
 
 
 def main():
+
     students_amount = randint(30, 50)
     teachers_amount = randint(5, 8)
 
