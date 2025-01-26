@@ -16,7 +16,6 @@ def queries_sql(query):
                 with open(f"query_{query_count}.sql", "w", encoding="utf-8") as file:
                     file.write(task)
                 query_count += 1
-            con.close()
 
     except Error as e:
         logging.error(f"Error executing query: {e}")

@@ -35,7 +35,7 @@ def main():
         create_table(conn, group_table, "groups")
 
         logging.info("Tables created successfully.")
-        conn.close()
+
 
 
 teachers_table = """
